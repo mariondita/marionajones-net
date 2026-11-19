@@ -1440,3 +1440,66 @@ h1.hello-world::after {
         font-size: 48px;
     }
 }
+
+/* ==========================================================
+   Responsive fixes (tablet & phone)
+   Kept together at the end so they override the rules above.
+   Desktop (wider than 968px) is not affected.
+   ========================================================== */
+
+@media (max-width: 968px) {
+    /* Images never wider than their column */
+    img { max-width: 100%; }
+
+    /* Homepage intro: text on top, Linus below */
+    #hero { flex-direction: column; gap: 10px; }
+    .hero-content { max-width: 100%; padding-right: 0; }
+    .hero-image { width: 100%; height: auto; justify-content: center; }
+    .life-image-linus { width: auto; height: auto; max-height: 360px; padding-right: 0; }
+    .life-content { flex-direction: column; align-items: center; }
+    .life-text { max-width: 100%; align-self: stretch; }
+    .life-image { height: auto; max-height: 480px; width: auto; }
+
+    /* Life, School and Work page headers: text first, photo below */
+    .life-header, .work-header { flex-direction: column; gap: 30px; }
+    .life-header-left, .work-header-left { max-width: 100%; }
+    .life-header-right, .work-header-right { justify-content: center; display: flex; }
+    .life-linus-image, .linus-image-school, .work-image {
+        width: auto; height: auto; max-width: 100%; max-height: 460px; padding: 0;
+    }
+
+    /* Work page: clients */
+    .clients-grid { grid-template-columns: 1fr; gap: 30px; margin: 30px 0 60px; }
+    .clients-intro p { max-width: none; }
+    .clients-carousel { gap: 16px; }
+    .carousel-items { gap: 30px; }
+    .client-logo { height: 120px; }
+}
+
+@media (max-width: 600px) {
+    /* Header: small logo, the four menu buttons in one row underneath */
+    header { flex-direction: column; align-items: flex-start; gap: 14px; padding-top: 10px; }
+    .logo-svg { width: 64px; }
+    nav { width: 100%; }
+    nav ul { display: grid; grid-template-columns: repeat(4, auto); justify-content: start; gap: 5px; }
+    .nav-item { padding: 7px 7px; }
+    .nav-icon, nav ul li a img { width: 14px; height: 14px; margin-right: 4px; }
+    nav ul li a { font-size: 12px; letter-spacing: 0.5px; }
+    .nav-item span { font-size: 12px; }
+
+    /* Calmer type sizes for small screens */
+    h1, h1.hello-world { font-size: 40px; }
+    .hero-content p, .life-text p, .life-description, .work-description,
+    .clients-intro p, .clients-list li { font-size: 18px; }
+    .clients-list ul { gap: 14px; }
+    .section-title, .clients-title { font-size: 32px; }
+
+    /* Galleries: one image per row */
+    .gallery-row { flex-direction: column; }
+    .gallery-image.half-width { width: 100%; }
+
+    /* Tools list: less space between items */
+    .tools-list li:not(:last-child)::after { margin: 0 12px; }
+    .client-logo { height: 90px; }
+    .carousel-items { gap: 16px; }
+}
