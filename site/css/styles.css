@@ -1492,6 +1492,7 @@ a.cta-button {
 .journal-entry { flex: 1 1 0; max-width: none; min-width: 0; }
 .journal-entry .image-container { width: 100%; padding-top: 0; aspect-ratio: 360 / 289; }
 .journal-entry img[src*="cities-coalition"] { object-position: left top; }
+.gallery-image[src*="fab10-robot-poster"] { object-position: left top; }
 
 /* ==========================================================
    Responsive fixes (tablet & phone)
