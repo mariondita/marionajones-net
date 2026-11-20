@@ -1494,36 +1494,45 @@ a.cta-button {
 .journal-entry img[src*="cities-coalition"] { object-position: left top; }
 .gallery-image[src*="fab10-robot-poster"] { object-position: left top; }
 
-/* Work page: clients logo strip, scrolling sideways */
-.logo-marquee {
-    overflow: hidden;
-    margin: 30px 0 60px;
-    padding: 24px 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
-            mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+/* Work page: clients logo strip with arrows */
+.logo-carousel {
+    display: flex; align-items: center; gap: 16px;
+    margin: 30px 0 60px; padding: 24px 0;
+    border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;
 }
-.logo-track { display: flex; width: max-content; animation: logo-scroll 45s linear infinite; }
-.logo-marquee:hover .logo-track,
-.logo-marquee:focus-within .logo-track { animation-play-state: paused; }
-.logo-list { display: flex; align-items: center; gap: 64px; padding: 0 64px 0 0; margin: 0; list-style: none; }
-.logo-list li { display: flex; align-items: center; gap: 10px; flex: none; }
+.logo-carousel .logo-list {
+    flex: 1; min-width: 0;
+    display: flex; align-items: center; gap: 64px;
+    margin: 0; padding: 4px 0; list-style: none;
+    overflow-x: auto; scroll-behavior: smooth; scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.logo-carousel .logo-list::-webkit-scrollbar { display: none; }
+.logo-carousel .logo-list li { display: flex; align-items: center; gap: 10px; flex: none; scroll-snap-align: start; }
 .client-logo-mark { height: 34px; width: auto; }
-.client-logo-icon { height: 30px; width: auto; }
 .client-logo-mark.client-logo-tall { height: 46px; }
+.client-logo-icon { height: 30px; width: auto; }
 .client-wordmark {
     font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
     font-size: 19px; font-weight: 700; letter-spacing: 0.2px; color: #000; white-space: nowrap;
 }
-@keyframes logo-scroll { to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) {
-    .logo-track { animation: none; }
-    .logo-marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+.logo-arrow {
+    flex: none; width: 44px; height: 44px; border-radius: 50%;
+    border: 1px solid #000; background: transparent; color: #000;
+    font-size: 26px; line-height: 1; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; padding: 0 0 3px;
+    transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
 }
+.logo-arrow:hover:not(:disabled) { background: #000; color: #fff; }
+.logo-arrow:disabled { opacity: 0.25; cursor: default; }
+.logo-list:focus-visible, .logo-arrow:focus-visible { outline: 2px solid #000; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .logo-carousel .logo-list { scroll-behavior: auto; } }
 @media (max-width: 600px) {
-    .logo-list { gap: 40px; padding-right: 40px; }
+    .logo-carousel { gap: 8px; }
+    .logo-carousel .logo-list { gap: 40px; }
+    .logo-arrow { width: 36px; height: 36px; font-size: 22px; }
     .client-logo-mark { height: 26px; }
+    .client-logo-mark.client-logo-tall { height: 36px; }
     .client-logo-icon { height: 24px; }
     .client-wordmark { font-size: 16px; }
 }

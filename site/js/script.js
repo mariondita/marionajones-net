@@ -42,3 +42,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Work page: client logos, moved with the arrow buttons
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.logo-carousel').forEach(carousel => {
+        const list = carousel.querySelector('.logo-list');
+        const prev = carousel.querySelector('.logo-prev');
+        const next = carousel.querySelector('.logo-next');
+        const update = () => {
+            prev.disabled = list.scrollLeft <= 10;
+            next.disabled = list.scrollLeft + list.clientWidth >= list.scrollWidth - 10;
+        };
+        const step = () => Math.max(list.clientWidth * 0.8, 200);
+        prev.addEventListener('click', () => list.scrollBy({ left: -step() }));
+        next.addEventListener('click', () => list.scrollBy({ left: step() }));
+        list.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+        update();
+    });
+});
+
