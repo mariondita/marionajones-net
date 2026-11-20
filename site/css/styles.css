@@ -1511,6 +1511,7 @@ a.cta-button {
 .logo-list li { display: flex; align-items: center; gap: 10px; flex: none; }
 .client-logo-mark { height: 34px; width: auto; }
 .client-logo-icon { height: 30px; width: auto; }
+.client-logo-mark.client-logo-tall { height: 46px; }
 .client-wordmark {
     font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
     font-size: 19px; font-weight: 700; letter-spacing: 0.2px; color: #000; white-space: nowrap;
