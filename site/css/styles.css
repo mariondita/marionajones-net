@@ -1493,6 +1493,11 @@ a.cta-button {
 .journal-entry .image-container { width: 100%; padding-top: 0; aspect-ratio: 360 / 289; }
 .journal-entry img[src*="cities-coalition"] { object-position: left top; }
 .gallery-image[src*="fab10-robot-poster"] { object-position: left top; }
+a.gallery-link { display: block; line-height: 0; transition: opacity .2s; }
+a.gallery-link:hover, a.gallery-link:focus-visible { opacity: .85; }
+a.gallery-link .gallery-image { display: block; width: 100%; }
+.gallery-row > a.gallery-link { width: calc(50% - 10px); }
+@media (max-width: 768px) { .gallery-row > a.gallery-link { width: 100%; } }
 .photo-credit { font-size: 14px; color: #555; margin: -8px 0 0; }
 .photo-credit a { color: inherit; }
 
