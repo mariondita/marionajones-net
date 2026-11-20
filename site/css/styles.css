@@ -1493,6 +1493,8 @@ a.cta-button {
 .journal-entry .image-container { width: 100%; padding-top: 0; aspect-ratio: 360 / 289; }
 .journal-entry img[src*="cities-coalition"] { object-position: left top; }
 .gallery-image[src*="fab10-robot-poster"] { object-position: left top; }
+.photo-credit { font-size: 14px; color: #555; margin: -8px 0 0; }
+.photo-credit a { color: inherit; }
 
 /* Work page: clients logo strip with arrows */
 .logo-carousel {
