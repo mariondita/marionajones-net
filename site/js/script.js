@@ -51,12 +51,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const next = carousel.querySelector('.logo-next');
         const atStart = () => list.scrollLeft <= 10;
         const atEnd = () => list.scrollLeft + list.clientWidth >= list.scrollWidth - 10;
+        // Space the logos so a whole number of them fills the strip, none cut off
+        const MIN_GAP = 32, MAX_GAP = 96;
+        const fitGap = () => {
+            const items = [...list.children];
+            const widths = items.map(li => li.getBoundingClientRect().width);
+            const room = list.clientWidth;
+            let n = 0, sum = 0;
+            while (n < widths.length && sum + widths[n] + n * MIN_GAP <= room) { sum += widths[n]; n++; }
+            const gap = n > 1 ? Math.min(MAX_GAP, (room - sum) / (n - 1)) : MIN_GAP;
+            list.style.gap = gap + 'px';
+        };
         const update = () => {
+            fitGap();
             const fits = list.scrollWidth <= list.clientWidth + 10;
             prev.disabled = fits;
             next.disabled = fits;
         };
-        const step = () => Math.max(list.clientWidth * 0.8, 200);
+        const step = () => list.clientWidth + parseFloat(getComputedStyle(list).columnGap || 0);
         // At the end, › goes back to the first logo; at the start, ‹ goes to the last
         prev.addEventListener('click', () => atStart()
             ? list.scrollTo({ left: list.scrollWidth })
