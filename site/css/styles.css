@@ -1512,6 +1512,7 @@ a.cta-button {
 .client-logo-mark { height: 34px; width: auto; }
 .client-logo-mark.client-logo-tall { height: 46px; }
 .client-logo-icon { height: 30px; width: auto; }
+.client-logo-mark.client-logo-small { height: 22px; }
 .client-wordmark {
     font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
     font-size: 19px; font-weight: 700; letter-spacing: 0.2px; color: #000; white-space: nowrap;
@@ -1533,6 +1534,7 @@ a.cta-button {
     .logo-arrow { width: 36px; height: 36px; font-size: 22px; }
     .client-logo-mark { height: 26px; }
     .client-logo-mark.client-logo-tall { height: 36px; }
+    .client-logo-mark.client-logo-small { height: 17px; }
     .client-logo-icon { height: 24px; }
     .client-wordmark { font-size: 16px; }
 }
