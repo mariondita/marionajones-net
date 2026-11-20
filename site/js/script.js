@@ -58,6 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
         next.addEventListener('click', () => list.scrollBy({ left: step() }));
         list.addEventListener('scroll', update, { passive: true });
         window.addEventListener('resize', update);
+        window.addEventListener('load', update);
+        list.querySelectorAll('img').forEach(img => img.addEventListener('load', update));
+        if ('ResizeObserver' in window) new ResizeObserver(update).observe(list);
         update();
     });
 });
