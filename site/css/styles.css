@@ -1494,6 +1494,39 @@ a.cta-button {
 .journal-entry img[src*="cities-coalition"] { object-position: left top; }
 .gallery-image[src*="fab10-robot-poster"] { object-position: left top; }
 
+/* Work page: clients logo strip, scrolling sideways */
+.logo-marquee {
+    overflow: hidden;
+    margin: 30px 0 60px;
+    padding: 24px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+            mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+.logo-track { display: flex; width: max-content; animation: logo-scroll 45s linear infinite; }
+.logo-marquee:hover .logo-track,
+.logo-marquee:focus-within .logo-track { animation-play-state: paused; }
+.logo-list { display: flex; align-items: center; gap: 64px; padding: 0 64px 0 0; margin: 0; list-style: none; }
+.logo-list li { display: flex; align-items: center; gap: 10px; flex: none; }
+.client-logo-mark { height: 34px; width: auto; }
+.client-logo-icon { height: 30px; width: auto; }
+.client-wordmark {
+    font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    font-size: 19px; font-weight: 700; letter-spacing: 0.2px; color: #000; white-space: nowrap;
+}
+@keyframes logo-scroll { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+    .logo-track { animation: none; }
+    .logo-marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+}
+@media (max-width: 600px) {
+    .logo-list { gap: 40px; padding-right: 40px; }
+    .client-logo-mark { height: 26px; }
+    .client-logo-icon { height: 24px; }
+    .client-wordmark { font-size: 16px; }
+}
+
 /* ==========================================================
    Responsive fixes (tablet & phone)
    Kept together at the end so they override the rules above.
