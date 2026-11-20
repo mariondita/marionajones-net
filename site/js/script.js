@@ -49,13 +49,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const list = carousel.querySelector('.logo-list');
         const prev = carousel.querySelector('.logo-prev');
         const next = carousel.querySelector('.logo-next');
+        const atStart = () => list.scrollLeft <= 10;
+        const atEnd = () => list.scrollLeft + list.clientWidth >= list.scrollWidth - 10;
         const update = () => {
-            prev.disabled = list.scrollLeft <= 10;
-            next.disabled = list.scrollLeft + list.clientWidth >= list.scrollWidth - 10;
+            const fits = list.scrollWidth <= list.clientWidth + 10;
+            prev.disabled = fits;
+            next.disabled = fits;
         };
         const step = () => Math.max(list.clientWidth * 0.8, 200);
-        prev.addEventListener('click', () => list.scrollBy({ left: -step() }));
-        next.addEventListener('click', () => list.scrollBy({ left: step() }));
+        // At the end, › goes back to the first logo; at the start, ‹ goes to the last
+        prev.addEventListener('click', () => atStart()
+            ? list.scrollTo({ left: list.scrollWidth })
+            : list.scrollBy({ left: -step() }));
+        next.addEventListener('click', () => atEnd()
+            ? list.scrollTo({ left: 0 })
+            : list.scrollBy({ left: step() }));
         list.addEventListener('scroll', update, { passive: true });
         window.addEventListener('resize', update);
         window.addEventListener('load', update);
