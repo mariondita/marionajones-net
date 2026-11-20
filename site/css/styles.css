@@ -1506,6 +1506,7 @@ a.cta-button {
 .clients-section { padding-bottom: 0; }
 .clients-section .logo-carousel { margin-bottom: 0; }
 .clients-section + .tools-list { margin-top: 50px; }
+.tools-list .section-title { margin: 0 0 30px; }
 a.gallery-link { display: block; line-height: 0; transition: opacity .2s; }
 a.gallery-link:hover, a.gallery-link:focus-visible { opacity: .85; }
 a.gallery-link .gallery-image { display: block; width: 100%; }
