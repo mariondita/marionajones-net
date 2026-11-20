@@ -1441,6 +1441,9 @@ h1.hello-world::after {
     }
 }
 
+/* School page: Linus illustration, about the height of the intro text */
+.linus-image-school { height: 460px; width: auto; }
+
 /* ==========================================================
    Responsive fixes (tablet & phone)
    Kept together at the end so they override the rules above.
