@@ -1487,6 +1487,12 @@ a.cta-button {
     .life-home-image img { position: relative; z-index: 1; margin-bottom: -105px; }
 }
 
+/* Homepage Journal: same columns and width as the Work images above, rectangular, same height */
+.journal-entries { gap: 40px; padding-right: 40px; }
+.journal-entry { flex: 1 1 0; max-width: none; min-width: 0; }
+.journal-entry .image-container { width: 100%; padding-top: 0; aspect-ratio: 360 / 289; }
+.journal-entry img[src*="cities-coalition"] { object-position: left top; }
+
 /* ==========================================================
    Responsive fixes (tablet & phone)
    Kept together at the end so they override the rules above.
