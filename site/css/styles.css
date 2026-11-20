@@ -85,6 +85,12 @@ nav ul {
     border-color: #ddd; /* Change border color on hover */
 }
 
+/* Current section stays green */
+.nav-item[aria-current="page"] {
+    background-color: hwb(88 50% 10%);
+    border-color: #ddd;
+}
+
 .nav-item:hover .nav-icon {
     transform: scale(1.1);
 }
