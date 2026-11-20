@@ -1504,8 +1504,9 @@ a.cta-button {
 .clients-section .clients-list ul { gap: 6px; }
 .clients-section .clients-list li { line-height: 1.3; margin-bottom: 0; }
 .clients-section { padding-bottom: 0; }
-.clients-section .logo-carousel { margin-bottom: 0; }
-.clients-section + .tools-list { margin-top: 50px; }
+.clients-section .logo-carousel { margin-bottom: 60px; }
+.work-intro + .tools-list, .tools-list { margin: 60px auto 0; }
+.tools-list + .clients-section { padding-top: 60px; }
 .tools-list .section-title { margin: 0 0 30px; }
 a.gallery-link { display: block; line-height: 0; transition: opacity .2s; }
 a.gallery-link:hover, a.gallery-link:focus-visible { opacity: .85; }
