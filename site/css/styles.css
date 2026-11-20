@@ -1443,7 +1443,7 @@ h1.hello-world::after {
 
 /* School page: Linus illustration, about the height of the intro text */
 .linus-image-school { height: 520px; width: auto; }
-@media (min-width: 969px) { .linus-image-school { margin-right: 100px; } }
+@media (min-width: 969px) { .linus-image-school { margin-right: 200px; } }
 
 /* ==========================================================
    Responsive fixes (tablet & phone)
