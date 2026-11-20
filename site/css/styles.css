@@ -1510,6 +1510,11 @@ a.cta-button {
 .work-intro + .tools-list, .tools-list { margin: 60px auto 0; }
 .tools-list + .clients-section { padding-top: 60px; }
 .tools-list .section-title { margin: 0 0 30px; }
+.nature-figure { margin: 0; }
+.nature-figure.half-width { width: calc(50% - 10px); }
+.nature-figure .gallery-image.half-width { width: 100%; }
+.nature-figure figcaption { font-size: 16px; line-height: 1.5; color: #333; margin-top: 12px; }
+@media (max-width: 768px) { .nature-figure.half-width { width: 100%; } }
 a.gallery-link { display: block; line-height: 0; transition: opacity .2s; }
 a.gallery-link:hover, a.gallery-link:focus-visible { opacity: .85; }
 a.gallery-link .gallery-image { display: block; width: 100%; }
