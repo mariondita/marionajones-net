@@ -155,7 +155,6 @@ h1 {
     height: 200%;
     display: flex;
     justify-content: flex-end; 
-    align-items: left;
 }
 
 .home-linus {
@@ -1444,6 +1443,35 @@ h1.hello-world::after {
 /* School page: Linus illustration, about the height of the intro text */
 .linus-image-school { height: 520px; width: auto; }
 @media (min-width: 969px) { .linus-image-school { margin-right: 150px; } }
+
+/* Standards fixes: proper h1/h2 elements that keep their previous look */
+.title-h2 {
+    font-family: 'Lora', serif; font-size: 36px; font-weight: 400; line-height: normal;
+    letter-spacing: normal; color: #1A1A1A; margin: 0; padding: 0; max-width: none;
+}
+a.cta-button {
+    display: inline-block; text-decoration: none; line-height: normal;
+    font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+.view-all-link {
+    display: inline-block; padding: 22px 44px; background-color: #000; color: #fff;
+    border-radius: 4px; font-family: 'Lora', serif; font-size: 20px; font-weight: 400;
+    text-transform: uppercase; text-decoration: none; line-height: normal;
+    transition: background-color 0.3s ease;
+}
+.view-all-link:hover { background-color: #333; }
+.post-meta .post-date-line {
+    font-size: 1.17em; font-weight: 700; line-height: normal; letter-spacing: 0.5px;
+    color: #333; margin: 1em 0;
+}
+.post-tag h2.post-tag-heading {
+    font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 700; line-height: normal;
+    letter-spacing: normal; color: #333; margin: 21.28px 0;
+}
+.school-column h2.school-heading {
+    font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 800; line-height: normal;
+    color: #333; margin-top: 16px; margin-bottom: 20px;
+}
 
 /* ==========================================================
    Responsive fixes (tablet & phone)
