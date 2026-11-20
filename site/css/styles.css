@@ -1482,6 +1482,11 @@ a.cta-button {
     color: #333; margin-top: 16px; margin-bottom: 20px;
 }
 
+/* Homepage: School comes up closer; the DNA strand of the Jacquard loom dips over its line */
+@media (min-width: 969px) {
+    .life-home-image img { position: relative; z-index: 1; margin-bottom: -105px; }
+}
+
 /* ==========================================================
    Responsive fixes (tablet & phone)
    Kept together at the end so they override the rules above.
