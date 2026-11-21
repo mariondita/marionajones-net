@@ -1644,7 +1644,7 @@ a.gallery-link .gallery-image { display: block; width: 100%; }
 }
 
 /* Half the space under the big page titles */
-.life-header-left h1, .work-header-left h1 { margin-bottom: 20px; }
+.life-header-left h1, .work-header-left h1, .hero-content h1 { margin-bottom: 20px; }
 @media (max-width: 968px) {
     .event-header { gap: 15px; }
 }
