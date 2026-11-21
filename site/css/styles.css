@@ -1653,8 +1653,26 @@ a.gallery-link .gallery-image { display: block; width: 100%; }
 .hero-content p, .life-description, .work-description, .event-description { margin: 0 0 1em; }
 .journal-post p { line-height: 1.6; margin: 0 0 1em; }
 
-/* Client logos: every logo the same height */
-.logo-list .client-logo-mark, .logo-list .client-logo-mark.client-logo-tall, .logo-list .client-logo-mark.client-logo-small, .logo-list .client-logo-icon { height: 32px; }
+/* Client logos: optically balanced heights (heavy wordmarks smaller, delicate ones larger) */
+.logo-list img[src$="/gsma.svg"], .logo-list img[src$="/gsma.png"] { height: 22px; }
+.logo-list img[src$="/inditex.svg"], .logo-list img[src$="/inditex.png"] { height: 25px; }
+.logo-list img[src$="/nasa.svg"], .logo-list img[src$="/nasa.png"] { height: 27px; }
+.logo-list img[src$="/ajuntament-barcelona.svg"], .logo-list img[src$="/ajuntament-barcelona.png"] { height: 30px; }
+.logo-list img[src$="/smashingmagazine.svg"], .logo-list img[src$="/smashingmagazine.png"] { height: 30px; }
+.logo-list img[src$="/mozilla.svg"], .logo-list img[src$="/mozilla.png"] { height: 30px; }
+.logo-list img[src$="/google.svg"], .logo-list img[src$="/google.png"] { height: 30px; }
+.logo-list img[src$="/generalitat.svg"], .logo-list img[src$="/generalitat.png"] { height: 34px; }
+.logo-list img[src$="/cba.svg"], .logo-list img[src$="/cba.png"] { height: 36px; }
+.logo-list img[src$="/ajuntament-hospitalet.svg"], .logo-list img[src$="/ajuntament-hospitalet.png"] { height: 40px; }
 @media (max-width: 600px) {
-    .logo-list .client-logo-mark, .logo-list .client-logo-mark.client-logo-tall, .logo-list .client-logo-mark.client-logo-small, .logo-list .client-logo-icon { height: 26px; }
+    .logo-list img[src$="/gsma.svg"], .logo-list img[src$="/gsma.png"] { height: 18px; }
+    .logo-list img[src$="/inditex.svg"], .logo-list img[src$="/inditex.png"] { height: 20px; }
+    .logo-list img[src$="/nasa.svg"], .logo-list img[src$="/nasa.png"] { height: 22px; }
+    .logo-list img[src$="/ajuntament-barcelona.svg"], .logo-list img[src$="/ajuntament-barcelona.png"] { height: 24px; }
+    .logo-list img[src$="/smashingmagazine.svg"], .logo-list img[src$="/smashingmagazine.png"] { height: 24px; }
+    .logo-list img[src$="/mozilla.svg"], .logo-list img[src$="/mozilla.png"] { height: 24px; }
+    .logo-list img[src$="/google.svg"], .logo-list img[src$="/google.png"] { height: 24px; }
+    .logo-list img[src$="/generalitat.svg"], .logo-list img[src$="/generalitat.png"] { height: 27px; }
+    .logo-list img[src$="/cba.svg"], .logo-list img[src$="/cba.png"] { height: 29px; }
+    .logo-list img[src$="/ajuntament-hospitalet.svg"], .logo-list img[src$="/ajuntament-hospitalet.png"] { height: 32px; }
 }
