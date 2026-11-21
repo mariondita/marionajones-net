@@ -1781,3 +1781,9 @@ main .section-header { max-width: 1160px; }
 }
 @media (min-width: 969px) { .bio-intro .life-linus-image { width: auto; height: 460px; max-width: 100%; } }
 @media (min-width: 969px) { .bio-intro .life-header-left > p:last-child { margin-bottom: 0; } }
+
+/* Event-style pages: half the space between the intro and the first photo */
+.event-intro { padding-bottom: 0; }
+.event-intro .event-description:last-child { margin-bottom: 0; }
+.event-intro + .event-gallery { margin-top: 45px; }
+.event-intro + .event-gallery > .gallery-container { margin-top: 0; }
