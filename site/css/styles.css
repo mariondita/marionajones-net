@@ -1642,3 +1642,9 @@ a.gallery-link .gallery-image { display: block; width: 100%; }
 @media (max-width: 600px) {
     main > section:first-child { margin-top: 30px; }
 }
+
+/* Half the space under the big page titles */
+.life-header-left h1, .work-header-left h1 { margin-bottom: 20px; }
+@media (max-width: 968px) {
+    .event-header { gap: 15px; }
+}
