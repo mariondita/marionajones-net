@@ -1696,3 +1696,6 @@ main .section-header h2, main .section-title { font-size: 36px; }
 /* Homepage: less space between the hero (Linus) and the Life section */
 @media (min-width: 969px) { .life-image-linus { width: auto; height: 400px; padding-right: 150px; margin-top: 40px; }
     #hero { padding-bottom: 30px; } }
+
+/* Journal: no hairline under the intro, the Latest Posts heading already has its rule */
+.journal-intro .life-header { border-bottom: none; padding-bottom: 0; }
