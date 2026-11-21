@@ -1591,7 +1591,8 @@ a.gallery-link .gallery-image { display: block; width: 100%; }
     .life-text { max-width: 100%; align-self: stretch; }
     .life-image { height: auto; max-height: 480px; width: auto; }
     .life-home-image { width: 100%; display: flex; justify-content: center; }
-    .life-home-image img { width: 100%; max-width: 380px; }
+    .life-home-image img { width: 100%; max-width: 380px; margin-top: 0; }
+    .life-content { row-gap: 20px; }
 
     /* Life, School and Work page headers: text first, photo below */
     .life-header, .work-header { flex-direction: column; gap: 30px; }
