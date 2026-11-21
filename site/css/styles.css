@@ -1774,7 +1774,9 @@ main .section-header { max-width: 1160px; }
 
 /* Life: the portrait stands on the My Favorite Things line */
 @media (min-width: 969px) {
-    .bio-intro .life-header { align-items: flex-start; }
-    .bio-intro .life-header-right { align-self: flex-end; }
-    .bio-intro .life-linus-image { position: relative; top: 76px; margin-right: 40px; display: block; }
+    .bio-intro .life-header { align-items: stretch; }
+    .bio-intro .life-header-right { display: flex; flex-direction: column; justify-content: flex-end; }
+    .bio-intro .life-linus-image { display: block; margin: -30px 40px -76px 0; }
 }
+@media (min-width: 1200px) { .bio-intro .life-linus-image { width: auto; height: 560px; max-width: none; } }
+@media (min-width: 969px) { .bio-intro .life-header-left > p:last-child { margin-bottom: 0; } }
