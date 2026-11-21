@@ -1692,3 +1692,7 @@ main .section-header h2, main .section-title { font-size: 36px; }
     .sub-nav .nav-item { font-size: 14px; }
     .sub-nav .nav-item img { width: 16px; height: 16px; }
 }
+
+/* Homepage: less space between the hero (Linus) and the Life section */
+@media (min-width: 969px) { .life-image-linus { width: auto; height: 400px; padding-right: 150px; margin-top: 40px; }
+    #hero { padding-bottom: 30px; } }
