@@ -1698,4 +1698,5 @@ main .section-header h2, main .section-title { font-size: 36px; }
     #hero { padding-bottom: 30px; } }
 
 /* Journal: no hairline under the intro, the Latest Posts heading already has its rule */
-.journal-intro .life-header { border-bottom: none; padding-bottom: 0; }
+.journal-intro .life-header { border-bottom: none; padding-bottom: 0; margin-bottom: 30px; }
+.journal-intro .journal-linus-image { margin-bottom: 0; }
