@@ -1715,3 +1715,6 @@ main .section-header h2, main .section-title { font-size: 36px; }
 .post-figures figure:first-child { flex: 0 1 335px; }
 .post-figures figcaption { font-size: 15px; color: #555; margin-top: 8px; }
 @media (max-width: 600px) { .post-figures { flex-direction: column; align-items: stretch; } .post-figures figure:first-child { max-width: 320px; } }
+
+/* Free Culture Project thumbnails: keep the logo in the top-left corner visible */
+.journal-card img[src*="free-culture"], .journal-entry img[src*="free-culture"], .post-card img[src*="free-culture"] { object-position: left top; }
