@@ -1707,3 +1707,11 @@ main .section-header h2, main .section-title { font-size: 36px; }
 .fit-row > * { min-width: 0; }
 .fit-row .gallery-image { width: 100%; height: auto; aspect-ratio: auto; object-fit: initial; display: block; }
 @media (max-width: 768px) { .fit-row { flex-direction: column; } .fit-row > * { flex: none !important; width: 100%; } }
+
+/* Journal post: pair of figures */
+.post-figures { display: flex; gap: 30px; align-items: flex-end; margin: 30px 0; }
+.post-figures figure { margin: 0; flex: 1; }
+.post-figures img { width: 100%; height: auto; display: block; }
+.post-figures figure:first-child { flex: 0 1 335px; }
+.post-figures figcaption { font-size: 15px; color: #555; margin-top: 8px; }
+@media (max-width: 600px) { .post-figures { flex-direction: column; align-items: stretch; } .post-figures figure:first-child { max-width: 320px; } }
