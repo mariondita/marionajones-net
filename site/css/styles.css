@@ -1796,3 +1796,5 @@ main .section-header { max-width: 1160px; }
 .journal-post .art-figure { max-width: 560px; }
 .journal-post .art-small { max-width: 320px; }
 .journal-post .art-hero { max-width: 560px; }
+.journal-post .module-list { font-size: 18px; line-height: 1.6; margin: 0 0 1.2em; padding-left: 1.6em; columns: 2; column-gap: 40px; }
+@media (max-width: 600px) { .journal-post .module-list { columns: 1; font-size: 17px; } }
