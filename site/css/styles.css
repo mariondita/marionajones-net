@@ -1792,3 +1792,4 @@ main .section-header { max-width: 1160px; }
 .journal-post .post-logo img { width: 100%; height: auto; display: block; }
 .journal-post .post-logo figcaption { font-size: 14px; line-height: 1.4; color: #666; margin-top: 10px; }
 .journal-card img[src*="south-of-64"], .journal-entry img[src*="south-of-64"], .post-card img[src*="south-of-64"] { object-position: left top; }
+.journal-card img[src*="womens-center"], .journal-entry img[src*="womens-center"], .post-card img[src*="womens-center"] { object-position: left top; }
