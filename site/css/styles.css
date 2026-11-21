@@ -1648,3 +1648,7 @@ a.gallery-link .gallery-image { display: block; width: 100%; }
 @media (max-width: 968px) {
     .event-header { gap: 15px; }
 }
+
+/* Paragraph spacing: one em between paragraphs (about two thirds of the line height) */
+.hero-content p, .life-description, .work-description, .event-description { margin: 0 0 1em; }
+.journal-post p { line-height: 1.6; margin: 0 0 1em; }
