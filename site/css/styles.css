@@ -1787,3 +1787,8 @@ main .section-header { max-width: 1160px; }
 .event-intro .event-description:last-child { margin-bottom: 0; }
 .event-intro + .event-gallery { margin-top: 45px; }
 .event-intro + .event-gallery > .gallery-container { margin-top: 0; }
+
+.journal-post .post-logo { margin: 36px 0; max-width: 480px; }
+.journal-post .post-logo img { width: 100%; height: auto; display: block; }
+.journal-post .post-logo figcaption { font-size: 14px; line-height: 1.4; color: #666; margin-top: 10px; }
+.journal-card img[src*="south-of-64"], .journal-entry img[src*="south-of-64"], .post-card img[src*="south-of-64"] { object-position: left top; }
