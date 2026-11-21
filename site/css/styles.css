@@ -1771,3 +1771,10 @@ main .section-header { max-width: 1160px; }
 .post-figures figure .fig-img { align-self: end; }
 .post-figures figcaption { align-self: start; }
 @media (max-width: 600px) { .post-figures { grid-template-columns: 1fr; } .post-figures figure { grid-row: auto; grid-template-rows: auto; } }
+
+/* Life: the portrait stands on the My Favorite Things line */
+@media (min-width: 969px) {
+    .bio-intro .life-header { align-items: flex-start; }
+    .bio-intro .life-header-right { align-self: flex-end; }
+    .bio-intro .life-linus-image { position: relative; top: 76px; margin-right: 40px; display: block; }
+}
