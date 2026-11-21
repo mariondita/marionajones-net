@@ -1652,3 +1652,9 @@ a.gallery-link .gallery-image { display: block; width: 100%; }
 /* Paragraph spacing: one em between paragraphs (about two thirds of the line height) */
 .hero-content p, .life-description, .work-description, .event-description { margin: 0 0 1em; }
 .journal-post p { line-height: 1.6; margin: 0 0 1em; }
+
+/* Client logos: every logo the same height */
+.logo-list .client-logo-mark, .logo-list .client-logo-mark.client-logo-tall, .logo-list .client-logo-mark.client-logo-small, .logo-list .client-logo-icon { height: 32px; }
+@media (max-width: 600px) {
+    .logo-list .client-logo-mark, .logo-list .client-logo-mark.client-logo-tall, .logo-list .client-logo-mark.client-logo-small, .logo-list .client-logo-icon { height: 26px; }
+}
