@@ -1676,3 +1676,19 @@ a.gallery-link .gallery-image { display: block; width: 100%; }
     .logo-list img[src$="/cba.svg"], .logo-list img[src$="/cba.png"] { height: 29px; }
     .logo-list img[src$="/ajuntament-hospitalet.svg"], .logo-list img[src$="/ajuntament-hospitalet.png"] { height: 32px; }
 }
+
+/* Type scale: one step = ×1.25 from the body text (24px on computers, 18px on phones) */
+main h1, main .hero-content h1, main .life-header-left h1, main .work-header-left h1, main .event-header-left h1, main .journal-post h1 { font-size: 46px; line-height: 1.15; }
+main .section-header h2, main .section-title { font-size: 36px; }
+@media (max-width: 968px) {
+    main h1, main .hero-content h1, main .life-header-left h1, main .work-header-left h1, main .event-header-left h1, main .journal-post h1 { font-size: 40px; }
+}
+@media (max-width: 600px) {
+    main h1, main .hero-content h1, main .life-header-left h1, main .work-header-left h1, main .event-header-left h1, main .journal-post h1 { font-size: 34px; }
+    main .section-header h2, main .section-title { font-size: 28px; }
+    main .event-description { font-size: 18px; }
+}
+@media (max-width: 600px) {
+    .sub-nav .nav-item { font-size: 14px; }
+    .sub-nav .nav-item img { width: 16px; height: 16px; }
+}
