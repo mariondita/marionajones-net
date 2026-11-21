@@ -1794,3 +1794,5 @@ main .section-header { max-width: 1160px; }
 .journal-card img[src*="south-of-64"], .journal-entry img[src*="south-of-64"], .post-card img[src*="south-of-64"] { object-position: left top; }
 .journal-card img[src*="womens-center"], .journal-entry img[src*="womens-center"], .post-card img[src*="womens-center"] { object-position: left top; }
 .journal-post .art-figure { max-width: 560px; }
+.journal-post .art-small { max-width: 320px; }
+.journal-post .art-hero { max-width: 560px; }
