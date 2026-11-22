@@ -1804,4 +1804,5 @@ main .section-header { max-width: 1160px; }
     #journal .journal-entries:has(.life-image-container) { gap: 20px; }
     #journal .life-image-container { padding-top: 0; }
     #journal .life-image-container img { position: static; width: 80%; height: auto; display: block; }
+    #journal .journal-entry:has(img[src*="animal.png"]) { margin-bottom: -24px; }
 }
