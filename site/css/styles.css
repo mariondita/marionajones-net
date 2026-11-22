@@ -1824,3 +1824,4 @@ main .section-header { max-width: 1160px; }
 @media (min-width: 969px) {
     .linus-image-school.life-portrait { height: auto; width: min(540px, 42vw); max-width: none; margin-right: 40px; }
 }
+.event-card img[src*="limpiafacil"], .event-card img[src*="williamson-county"], .event-card img[src*="shawnee"], .event-card img[src*="switchblade"] { object-position: center top; }
