@@ -1847,6 +1847,8 @@ dialog.lightbox .lightbox-close:hover, dialog.lightbox .lightbox-close:focus-vis
 .special-post + .more-posts { margin-top: 60px; }
 .special-post .special-subtitle { font-family: 'Lora', serif; font-size: 24px; line-height: 1.4; color: #555; margin: -8px 0 28px; }
 @media (max-width: 600px) { .special-post .special-subtitle { font-size: 20px; } }
-/* Intro text lines up with the section title text, after the icon */
-.intro-indent .life-header-left { padding-left: 37px; }
-.journal-intro + #school > .school-content { padding-left: 37px; }
+
+/* Content lines up with the section title text, after the icon (all pages) */
+main > *:not(.page-header):not(#hero) > *:not(.section-header):not(.event-header) { padding-left: 37px; box-sizing: border-box; }
+main .event-header { padding-left: calc(20px + 37px); box-sizing: border-box; }
+@media (max-width: 420px) { .skills-list li { white-space: normal; } }
