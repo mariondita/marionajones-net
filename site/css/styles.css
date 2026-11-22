@@ -1814,3 +1814,4 @@ main .section-header { max-width: 1160px; }
 @media (max-width: 600px) { .skills-list li { font-size: 19px; } .skills-list li:not(:last-child)::after { margin: 0 10px; } }
 .tools-list li:not(:last-child)::after { margin: 0 18px; }
 @media (max-width: 600px) { .tools-list li { font-size: 19px; white-space: nowrap; } .tools-list li:not(:last-child)::after { margin: 0 10px; } }
+@media (max-width: 968px) { .clients-section .clients-intro { margin-bottom: 5px; } }
