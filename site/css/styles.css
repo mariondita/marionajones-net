@@ -1806,3 +1806,4 @@ main .section-header { max-width: 1160px; }
     #journal .life-image-container img { position: static; width: 80%; height: auto; display: block; }
     #journal .journal-entry:has(img[src*="animal.png"]) { margin-bottom: -24px; }
 }
+@media (max-width: 968px) { .bio-intro .life-header { row-gap: 0; } .bio-intro .life-linus-image { margin-top: -4px; } }
