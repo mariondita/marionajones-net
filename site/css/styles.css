@@ -1837,3 +1837,5 @@ dialog.lightbox img { display: block; max-width: 100%; max-height: calc(94vh - 6
 dialog.lightbox p { margin: 0; padding: 14px 56px 16px 20px; font-family: 'Source Sans Pro', sans-serif; font-size: 18px; font-weight: 600; color: #333; }
 dialog.lightbox .lightbox-close { position: absolute; right: 10px; bottom: 8px; width: 40px; height: 40px; border: 0; border-radius: 50%; background: transparent; font-size: 28px; line-height: 1; color: #333; cursor: pointer; }
 dialog.lightbox .lightbox-close:hover, dialog.lightbox .lightbox-close:focus-visible { background: hwb(88 50% 10%); }
+.journal-post figure.post-portrait { max-width: 520px; }
+.journal-card img[src*="little-maker"], .journal-entry img[src*="little-maker"], .post-card img[src*="little-maker"] { object-fit: contain; object-position: center top; background: transparent; }
