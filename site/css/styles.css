@@ -1839,3 +1839,9 @@ dialog.lightbox .lightbox-close { position: absolute; right: 10px; bottom: 8px; 
 dialog.lightbox .lightbox-close:hover, dialog.lightbox .lightbox-close:focus-visible { background: hwb(88 50% 10%); }
 .journal-post figure.post-portrait { max-width: 520px; }
 .journal-card img[src*="little-maker"], .journal-entry img[src*="little-maker"], .post-card img[src*="little-maker"] { object-fit: contain; object-position: center top; background: transparent; }
+
+/* Special post: page-style layout */
+.special-post .special-date { font-family: 'Source Sans Pro', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; color: #666; margin: 20px 0 12px; }
+.special-post .special-image { display: block; width: min(440px, 36vw); height: auto; margin: 0 40px 0 auto; }
+@media (max-width: 968px) { .special-post .special-image { width: 80%; max-width: 380px; margin: 10px auto 0; } }
+.special-post + .more-posts { margin-top: 60px; }
