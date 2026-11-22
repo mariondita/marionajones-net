@@ -1825,3 +1825,15 @@ main .section-header { max-width: 1160px; }
     .linus-image-school.life-portrait { height: auto; width: min(540px, 42vw); max-width: none; margin-right: 40px; }
 }
 .event-card img[src*="limpiafacil"], .event-card img[src*="williamson-county"], .event-card img[src*="shawnee"], .event-card img[src*="switchblade"] { object-position: center top; }
+
+/* Lightbox */
+.lightbox-trigger { display: block; width: 100%; padding: 0; margin: 0; border: 0; background: none; cursor: zoom-in; }
+.lightbox-trigger img { display: block; transition: opacity .2s; }
+.lightbox-trigger:hover img, .lightbox-trigger:focus-visible img { opacity: .85; }
+.lightbox-trigger:focus-visible { outline: 3px solid hwb(88 50% 10%); outline-offset: 4px; }
+dialog.lightbox { max-width: min(1100px, 94vw); max-height: 94vh; padding: 0; border: 0; border-radius: 6px; background: #fffdf0; box-shadow: 0 20px 60px rgba(0,0,0,.35); overflow: visible; }
+dialog.lightbox::backdrop { background: rgba(30, 25, 15, .75); }
+dialog.lightbox img { display: block; max-width: 100%; max-height: calc(94vh - 60px); width: auto; height: auto; margin: 0 auto; border-radius: 6px 6px 0 0; }
+dialog.lightbox p { margin: 0; padding: 14px 56px 16px 20px; font-family: 'Source Sans Pro', sans-serif; font-size: 18px; font-weight: 600; color: #333; }
+dialog.lightbox .lightbox-close { position: absolute; right: 10px; bottom: 8px; width: 40px; height: 40px; border: 0; border-radius: 50%; background: transparent; font-size: 28px; line-height: 1; color: #333; cursor: pointer; }
+dialog.lightbox .lightbox-close:hover, dialog.lightbox .lightbox-close:focus-visible { background: hwb(88 50% 10%); }

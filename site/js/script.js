@@ -85,3 +85,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+// Lightbox: click a screenshot to see it bigger
+(function () {
+    const groups = document.querySelectorAll('[data-lightbox]');
+    if (!groups.length || typeof HTMLDialogElement === 'undefined') return;
+    const dlg = document.createElement('dialog');
+    dlg.className = 'lightbox';
+    dlg.setAttribute('aria-label', 'Enlarged image');
+    dlg.innerHTML = '<img alt=""><p></p><button type="button" class="lightbox-close" aria-label="Close">&times;</button>';
+    document.body.appendChild(dlg);
+    const big = dlg.querySelector('img'), cap = dlg.querySelector('p');
+    dlg.querySelector('.lightbox-close').addEventListener('click', () => dlg.close());
+    dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+    groups.forEach((g) => g.addEventListener('click', (e) => {
+        const btn = e.target.closest('.lightbox-trigger');
+        if (!btn) return;
+        const img = btn.querySelector('img');
+        const title = btn.closest('.event-card')?.querySelector('h3')?.textContent || '';
+        big.src = img.currentSrc || img.src; big.alt = img.alt; cap.textContent = title;
+        dlg.showModal();
+    }));
+})();
