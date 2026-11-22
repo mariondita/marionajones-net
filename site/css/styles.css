@@ -1807,3 +1807,10 @@ main .section-header { max-width: 1160px; }
     #journal .journal-entry:has(img[src*="animal.png"]) { margin-bottom: -24px; }
 }
 @media (max-width: 968px) { .bio-intro .life-header { row-gap: 0; } .bio-intro .life-linus-image { margin-top: -4px; } }
+.tools-list + .tools-list { margin-top: 60px; }
+.skills-list ul { row-gap: 6px; }
+.skills-list li { white-space: nowrap; }
+.skills-list li:not(:last-child)::after { margin: 0 18px; }
+@media (max-width: 600px) { .skills-list li { font-size: 19px; } .skills-list li:not(:last-child)::after { margin: 0 10px; } }
+.tools-list li:not(:last-child)::after { margin: 0 18px; }
+@media (max-width: 600px) { .tools-list li { font-size: 19px; white-space: nowrap; } .tools-list li:not(:last-child)::after { margin: 0 10px; } }
