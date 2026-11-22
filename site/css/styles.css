@@ -1804,7 +1804,6 @@ main .section-header { max-width: 1160px; }
     #journal .journal-entries:has(.life-image-container) { gap: 20px; }
     #journal .life-image-container { padding-top: 0; }
     #journal .life-image-container img { position: static; width: 80%; height: auto; display: block; }
-    #journal .journal-entry:has(img[src*="animal.png"]) { margin-bottom: -24px; }
 }
 @media (max-width: 968px) { .bio-intro .life-header { row-gap: 0; } .bio-intro .life-linus-image { margin-top: -4px; } }
 .tools-list + .tools-list { margin-top: 60px; }
@@ -1816,3 +1815,4 @@ main .section-header { max-width: 1160px; }
 @media (max-width: 600px) { .tools-list li { font-size: 19px; white-space: nowrap; } .tools-list li:not(:last-child)::after { margin: 0 10px; } }
 @media (max-width: 968px) { .clients-section .clients-intro { margin-bottom: 5px; } }
 @media (max-width: 968px) { .bio-intro .life-linus-image { width: 70%; max-width: 320px; height: auto; margin: 10px auto 0; display: block; } }
+@media (max-width: 600px) { #journal .journal-entry:has(img[src*="animal-v2.png"]) { margin-bottom: 14px; } }
