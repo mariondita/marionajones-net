@@ -1862,3 +1862,13 @@ main .event-header { padding-left: calc(20px + 37px); box-sizing: border-box; }
 /* Animals page illustration: whole drawing, no crop */
 .animal-figure { margin: 0 auto; max-width: 1000px; width: 100%; }
 .gallery-image.animal-illustration { aspect-ratio: auto; object-fit: contain; display: block; }
+
+/* Life > Books: themed shelves */
+.books-section { margin: 20px 0 60px; }
+.book-group { margin: 0 0 44px; }
+.book-theme { font-family: 'Lora', serif; font-weight: 500; font-size: 24px; line-height: 1.3; margin: 0 0 14px; padding-bottom: 8px; border-bottom: 1px solid #ddd; }
+.book-count { font-family: 'Source Sans Pro', sans-serif; font-size: 14px; font-weight: 600; color: #888; margin-left: 6px; vertical-align: middle; }
+.book-list { list-style: none; margin: 0; padding: 0; columns: 3 260px; column-gap: 40px; }
+.book-list li { break-inside: avoid; font-size: 16px; line-height: 1.45; padding: 5px 0; }
+.book-list cite { font-style: italic; font-family: 'Lora', serif; color: #222; }
+.book-author { display: block; font-size: 14px; color: #666; }
