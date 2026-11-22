@@ -1815,4 +1815,9 @@ main .section-header { max-width: 1160px; }
 @media (max-width: 600px) { .tools-list li { font-size: 19px; white-space: nowrap; } .tools-list li:not(:last-child)::after { margin: 0 10px; } }
 @media (max-width: 968px) { .clients-section .clients-intro { margin-bottom: 5px; } }
 @media (max-width: 968px) { .bio-intro .life-linus-image { width: 70%; max-width: 320px; height: auto; margin: 10px auto 0; display: block; } }
-.life-portrait { border-radius: 4px; }
+.life-portrait { border-radius: 0; }
+@media (min-width: 969px) {
+    .life-header:has(.life-portrait) { align-items: stretch; }
+    .life-header-right:has(.life-portrait) { display: flex; flex-direction: column; justify-content: flex-end; }
+    .life-portrait { margin-bottom: -76px; }
+}
