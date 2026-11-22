@@ -1853,3 +1853,4 @@ main > *:not(.page-header):not(#hero) > *:not(.section-header):not(.event-header
 main .event-header { padding-left: calc(20px + 37px); box-sizing: border-box; }
 @media (max-width: 420px) { .skills-list li { white-space: normal; } }
 .clients-section > .section-header { margin-bottom: 30px; } .clients-section > .clients-grid { margin-top: 0; }
+.clients-section .clients-list ul { gap: 16px; }
