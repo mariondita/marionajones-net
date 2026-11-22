@@ -1849,3 +1849,4 @@ dialog.lightbox .lightbox-close:hover, dialog.lightbox .lightbox-close:focus-vis
 @media (max-width: 600px) { .special-post .special-subtitle { font-size: 20px; } }
 /* Intro text lines up with the section title text, after the icon */
 .intro-indent .life-header-left { padding-left: 37px; }
+.journal-intro + #school > .school-content { padding-left: 37px; }
