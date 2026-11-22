@@ -1858,3 +1858,7 @@ main .event-header { padding-left: calc(20px + 37px); box-sizing: border-box; }
 /* Homepage hero text starts under the bottom peak of the logo hexagon */
 #hero .hero-content { padding-left: 54.5px; box-sizing: border-box; }
 @media (max-width: 600px) { #hero .hero-content { padding-left: 32px; } }
+
+/* Animals page illustration: whole drawing, no crop */
+.animal-figure { margin: 0 auto; max-width: 1000px; width: 100%; }
+.gallery-image.animal-illustration { aspect-ratio: auto; object-fit: contain; display: block; }
