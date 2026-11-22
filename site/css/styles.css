@@ -1821,3 +1821,6 @@ main .section-header { max-width: 1160px; }
     .life-header-right:has(.life-portrait) { display: flex; flex-direction: column; justify-content: flex-end; }
     .life-portrait { margin-bottom: -76px; }
 }
+@media (min-width: 969px) {
+    .linus-image-school.life-portrait { height: auto; width: min(540px, 42vw); max-width: none; margin-right: 40px; }
+}
