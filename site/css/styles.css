@@ -1909,3 +1909,13 @@ details.book-group:first-of-type { border-top: 1px solid #ddd; }
 .special-post-top .life-header-right { align-self: flex-start; margin-top: 20px; }
 .special-post-top .life-header { padding-bottom: 40px; }
 @media (max-width: 968px) { .special-post-top .life-header-right { margin-top: 0; } }
+/* Robotics post: arm top aligns with the first paragraph */
+@media (min-width: 969px) {
+  .special-post-top .life-header { display: grid; grid-template-columns: 1fr 1fr; column-gap: 60px; row-gap: 0; align-items: start; }
+  .special-post-top .life-header-left { display: contents; }
+  .special-post-top .life-header-left > * { grid-column: 1; }
+  .special-post-top .life-header-left > h1 { margin-top: 8px; }
+  .special-post-top .life-header-right { grid-column: 2; grid-row: 4 / span 20; margin-top: 0; align-self: start; }
+  .special-post-top .life-header-right .special-image { margin-top: 4px; }
+}
+.special-post-top .special-image { transform: scaleX(-1); }
