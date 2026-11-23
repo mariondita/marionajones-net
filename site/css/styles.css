@@ -1896,3 +1896,10 @@ details.book-group:first-of-type { border-top: 1px solid #ddd; }
   .books-section { padding-right: 0; }
 }
 .books-section { margin-top: 63px; }
+
+/* I Love Robots: drawing stands on a hairline */
+.special-post .life-header { border-bottom: 1px solid #ddd; align-items: flex-end; }
+.special-post .life-header-right { align-self: flex-end; line-height: 0; }
+.special-post .special-image { margin-bottom: 0; }
+.special-post + .more-posts { border-top: 0; margin-top: 0; }
+@media (min-width: 969px) { .special-post .life-header { margin-right: 40px; } .special-post .special-image { margin-right: 0; } }
