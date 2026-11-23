@@ -1904,3 +1904,4 @@ details.book-group:first-of-type { border-top: 1px solid #ddd; }
 .special-post + .more-posts { border-top: 0; margin-top: 0; }
 @media (min-width: 969px) { .special-post .life-header { margin-right: 40px; } .special-post .special-image { margin-right: 0; } }
 .journal-card img[src*="robot-arm"], .journal-entry img[src*="robot-arm"], .post-card img[src*="robot-arm"] { object-fit: contain; object-position: center; background: transparent; }
+.special-post .life-description a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
