@@ -1872,3 +1872,6 @@ main .event-header { padding-left: calc(20px + 37px); box-sizing: border-box; }
 .book-list li { break-inside: avoid; font-size: 16px; line-height: 1.45; padding: 5px 0; }
 .book-list cite { font-style: italic; font-family: 'Lora', serif; color: #222; }
 .book-author { display: block; font-size: 14px; color: #666; }
+.book-theme { display: flex; align-items: center; gap: 10px; }
+.book-theme-icon { width: 24px; height: 24px; flex: none; }
+.book-theme .book-count { margin-left: 0; }
