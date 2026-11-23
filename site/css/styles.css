@@ -1919,3 +1919,4 @@ details.book-group:first-of-type { border-top: 1px solid #ddd; }
   .special-post-top .life-header-right .special-image { margin-top: 4px; }
 }
 .special-post-top .special-image { transform: scaleX(-1); }
+.journal-card p { margin-bottom: 6px; }
