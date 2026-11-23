@@ -1895,3 +1895,4 @@ details.book-group:first-of-type { border-top: 1px solid #ddd; }
   details.book-group > summary { padding: 14px 0; }
   .books-section { padding-right: 0; }
 }
+.books-section { margin-top: 63px; }
