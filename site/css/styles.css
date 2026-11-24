@@ -1920,3 +1920,6 @@ details.book-group:first-of-type { border-top: 1px solid #ddd; }
 }
 .special-post-top .special-image { transform: scaleX(-1); }
 .journal-card p { margin-bottom: 6px; }
+
+/* Super-thin title rules everywhere */
+.section-header, main .section-header { border-bottom-width: 1px !important; }
