@@ -1924,3 +1924,6 @@ details.book-group:first-of-type { border-top: 1px solid #ddd; }
 /* Super-thin title rules everywhere */
 .section-header, main .section-header { border-bottom-width: 1px !important; }
 #journal { border-bottom: 0; }
+/* Title link underline matches the hairline */
+.section-header a { text-decoration-color: #ccc; }
+.section-header a:hover, .section-header a:focus-visible { text-decoration-color: currentColor; }
