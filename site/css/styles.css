@@ -1927,3 +1927,4 @@ details.book-group:first-of-type { border-top: 1px solid #ddd; }
 /* Title link underline matches the hairline */
 main .section-header a:not([aria-current]), header + main .section-header a { text-decoration-color: #ccc !important; }
 main .section-header a:hover, main .section-header a:focus-visible { text-decoration-color: currentColor !important; }
+details.book-group > .book-list { padding-left: 34px; box-sizing: border-box; }
